@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+#check{
+    display: none;
+}
+
+.main_box{
+    height: 100vh;
+    background-image: url(photo.jpg);
+    background-size: cover;
+}
+
+.btn_one{
+    z-index: 1;
+    position: absolute;
+    left:15px;
+    top:10px;
+    color: #fff;
+    font-size: 25px;
+    transition-duration: 0.3s;
+    /* font-weight: 500; */
+}
+
+.sidebar_menu{
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top:2.5px;
+    left:5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 7px white;
+    left:-300px;
+    
+    transition: 0.3s linear;
+}
+
+.logo{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0 0 3px white;
+    /* border-top-right-radius: 25px; */
+    padding-top: 10px;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn_two{
+    z-index: 1;
+    position: absolute;
+    left:15px;
+    top:10px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.menu{
+    position: absolute;
+    top:50px;
+    width: 100%;
+}
+
+.menu li{
+    /* width: 100%; */
+    /* height: 50px; */
+    margin: 15px 5px;
+    padding: 10px 15px;
+}
+
+.menu i{
+    color: rgba(255, 255, 255, 0.758);
+    padding-right: 10px;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+.menu a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    transition-duration: 0.2s;
+}
+
+.social_media{
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    transition-duration: 1s;
+}
+
+.social_media i{
+    transition-duration:0.5s;
+}
+
+.social_media a{
+    color: rgba(255, 255, 255,0.758);
+    padding-right: 5px;
+    margin:25px 10px;
+    font-size: 25px;
+    
+}
+
+/* Hover */
+
+.menu li:hover{
+    /* border: solid 0.5px #fff; */
+    box-shadow: 0 0 3px white;
+    background-color: rgba(255, 255, 255, 0.3);
+    a{
+        font-size: 24px;
+    }
+    i{
+        transform: scale(1.2);
+        color: #fff;
+    }
+}
+
+/* Click */
+
+.social_media i:hover{
+    color: #fff ;
+    transform: scale(1.3);
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
+
+/* #check:checked ~ .menu {
+    left: 0;
+} */
+
